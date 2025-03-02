@@ -1,11 +1,5 @@
 # Intelligent Rain Detection Module
 
-Valid response:
-  - No rain
-  - Light rain
-  - Moderate rain
-  - Heavy rain
-
 ### Features:
 - Usage conditions:
 inside windshields, without direct exposure to external natural environment
