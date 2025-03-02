@@ -1,7 +1,6 @@
 #include "gps.h"
 #include <cstdlib>
 
-// GPS Data Variables
 static char gps_raw_data[GPS_BUFFER_SIZE];
 static float latitude = 0.0;
 static float longitude = 0.0;
@@ -11,7 +10,7 @@ static int satellites = 0;
 static char time[10] = "";
 static char date[10] = "";
 
-// Initialize UART for GPS
+// init UART for GPS
 void gps_init() {
   uart_config_t uart_config = {.baud_rate = GPS_BAUD_RATE,
                                .data_bits = UART_DATA_8_BITS,
