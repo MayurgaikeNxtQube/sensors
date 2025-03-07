@@ -1,9 +1,9 @@
 #ifndef WIND_SENSOR_H
 #define WIND_SENSOR_H
 
-#include "driver/adc.h"
+#include <Arduino.h>
 
-#define WIND_SENSOR_ADC_CHANNEL ADC1_CHANNEL_6 // GPIO 34
+#define WIND_SENSOR_PIN 34
 
 void wind_sensor_init();
 float wind_sensor_read_voltage();
