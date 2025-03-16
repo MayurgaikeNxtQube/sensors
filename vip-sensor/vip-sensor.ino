@@ -14,14 +14,15 @@ void loop() {
     // Read Voltage Sensor (Voltage Divider)
     int voltageRaw = analogRead(VOLTAGE_SENSOR_PIN);
     float measuredVoltage = (voltageRaw / 1023.0) * 5.0; // Convert ADC to voltage
-    float actualVoltage = measuredVoltage * 11; // Assuming 11:1 voltage divider
+    float actualVoltage = measuredVoltage * 5.128; // Assuming 5.128:1 voltage divider
 
     // Print readings
     Serial.print("raw voltage: "); Serial.print(voltageRaw);
     Serial.print(" calculated voltage: "); Serial.println(actualVoltage);
-    
+
     Serial.print("raw current: "); Serial.print(currentRaw);
     Serial.print(" calculated current: "); Serial.println(current);
+    Serial.println();
 
     delay(1000);
 }
